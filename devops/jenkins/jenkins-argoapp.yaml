@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: devops/jenkins/manifests
-    repoURL: https://jihulab.com/devopsvvip/myiac.git
+    repoURL: https://github.com/letusthink/myiac.git
     targetRevision: main
     directory:
       recurse: false

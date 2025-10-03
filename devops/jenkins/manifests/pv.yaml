@@ -15,8 +15,8 @@ spec:
   #   - hard
   #   - nfsvers=4.1
   nfs:
-    path: /data/storage/kubernetes/jenkins
-    server: 192.168.1.200
+    path: /nfs/data/jenkins
+    server: 192.168.45.11
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
