@@ -20,13 +20,13 @@ spec:
       name: jenkinsagent
     spec:
       hostAliases:
-        - ip: "192.168.1.200"
+        - ip: "192.168.45.21"
           hostnames:
             - "gitlab.idevops.site"
-        - ip: "192.168.1.200"
+        - ip: "192.168.45.21"
           hostnames:
             - "sonar.idevops.site"
-        - ip: "192.168.1.200"
+        - ip: "192.168.45.21"
           hostnames:
             - "nexus.idevops.site"
       containers:
@@ -47,7 +47,7 @@ spec:
             - name: JENKINS_URL
               value: http://jenkins.jenkins.svc.cluster.local:8080
             - name: JENKINS_SECRET
-              value: c06fec7af4f8c413a72909cd94dfc9aa6d4d6ba23434b27d3327b6d7bce4d8a3
+              value: ab642038369e0180b2116627bc60a9b81b811893f40f0d4a9ed4cb9cb232e3bb
             - name: JENKINS_AGENT_NAME
               value: build
             - name: JENKINS_AGENT_WORKDIR
