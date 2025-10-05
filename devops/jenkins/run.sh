@@ -17,5 +17,8 @@ chmod -R 777 /nfs/data/jenkins-build-cache
 mkdir -p  /nfs/data/jenkins-workspace
 chmod -R 777 /nfs/data/jenkins-workspace
 
-## ArgoAPP
+## Jenkins ArgoAPP
 kubectl -n argocd apply -f jenkins-argoapp.yaml 
+
+## Jenkins-Agent ArgoAPP
+kubectl -n argocd apply -f jenkins-agent-argoapp.yaml 
